@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Repro CRE ec-sample</title>
+<script>
+    // enable repro.js only when loading this HTML by your app's WebView
+    window.repro = window.repro || {};
+    window.repro.isInAppBrowser = /MY_CUSTOM_USER_AGENT/.test(navigator.userAgent);
+</script>
+<script src="//cdn.reproio.com/js/v4/repro.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
+</head>
+<body>
+<main>
+  <h1>This is the page for ec-sample</h1>
+</main>
+
+<script>
+console.log('ec2 sample');
+// Custom event
+repro.track("open webview");                                                                                                                                                                                                                                                                                                                                                                                                   
+</script>
+</body>
+</html>
